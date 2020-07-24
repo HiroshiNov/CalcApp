@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         val intent = Intent(this, Result::class.java)
 
         //Transform into Int type
-        val input_value1 = tmp1.toIntOrNull()
-        val input_value2 = tmp2.toIntOrNull()
+        val input_value1 = tmp1.toDoubleOrNull()
+        val input_value2 = tmp2.toDoubleOrNull()
         Log.d("values log", "$input_value1,$input_value2")
         intent.putExtra("value1",input_value1)
         intent.putExtra("value2",input_value2)

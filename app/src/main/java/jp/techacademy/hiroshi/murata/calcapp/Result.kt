@@ -11,9 +11,9 @@ class Result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val value1 = intent.getIntExtra("value1",0)
-        val value2 = intent.getIntExtra("value2",0)
-        val result_value = intent.getIntExtra("result",0)
+        val value1 = intent.getDoubleExtra("value1",0.0)
+        val value2 = intent.getDoubleExtra("value2",0.0)
+        val result_value = intent.getDoubleExtra("result",0.0)
         val symbol = intent.getStringExtra("symbol")
 
         Log.d("value1","$value1")
